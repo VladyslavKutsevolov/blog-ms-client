@@ -7,7 +7,7 @@ const PostCrate = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
 
-    await axios.post("http://posts.com/posts", { title });
+    await axios.post("http://posts.com/posts/create", { title });
 
     setTitle("");
   };
